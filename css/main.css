@@ -360,6 +360,9 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	text-align: center;
 	margin-bottom: 55px;
 }
+.possible h1 {
+	text-align: center;
+}
 
 /* Slider skins ==============
 ==================================*/
