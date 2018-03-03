@@ -39,6 +39,7 @@ body {
 	opacity: 1;
 }
 
+
 /* CUSTOM STYLE =====================
 ==============================================*/
 
@@ -99,6 +100,40 @@ blockquote {
 }
 .owl-carousel .owl-item{
 	z-index: 100;
+}
+
+/* ABOUT =====================
+==============================================*/
+
+.about-page {
+	margin-top: 22px;
+}
+.about-page h3,
+.about-programs h3 {
+	font-family: "RobotoBold";
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+p {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 14px;
+}
+.about-page img {
+	float: right;
+	margin-top: 10px;
+	margin-left: 22px;
+}
+.about-programs {
+	background: #e1f4fc;
+	padding: 36px 0;
+}
+.about-programs h3 {
+	text-align: center;
+}
+.about-programs p {
+	text-align: center;
 }
 
 /* PLACEHOLDER STYLE =====================
@@ -350,6 +385,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .possible-circle.blue .circle-item h4 {
 	color: #1496d2;
 }
+<<<<<<< HEAD
 .possible {
 	padding: 48px 0 0;
 }
@@ -360,6 +396,8 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	text-align: center;
 	margin-bottom: 55px;
 }
+=======
+>>>>>>> 774ed318c2c7797639b5e5f5f527d0d0aea6d552
 
 /* Slider skins ==============
 ==================================*/
