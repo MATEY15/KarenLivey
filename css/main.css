@@ -105,10 +105,35 @@ blockquote {
 /* ABOUT =====================
 ==============================================*/
 
-.about-page h3 {
+.about-page {
+	margin-top: 22px;
+}
+.about-page h3,
+.about-programs h3 {
 	font-family: "RobotoBold";
 	font-size: 24px;
 	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+p {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 14px;
+}
+.about-page img {
+	float: right;
+	margin-top: 10px;
+	margin-left: 22px;
+}
+.about-programs {
+	background: #e1f4fc;
+	padding: 36px 0;
+}
+.about-programs h3 {
+	text-align: center;
+}
+.about-programs p {
+	text-align: center;
 }
 
 /* PLACEHOLDER STYLE =====================
@@ -359,19 +384,6 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 }
 .possible-circle.blue .circle-item h4 {
 	color: #1496d2;
-}
-.possible {
-	padding: 48px 0 0;
-}
-.possible h2 {
-	font-size: 26px;
-	letter-spacing: 4px;
-	color: #706f6f;
-	text-align: center;
-	margin-bottom: 55px;
-}
-.possible h1 {
-	text-align: center;
 }
 
 /* Slider skins ==============
