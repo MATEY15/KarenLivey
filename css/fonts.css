@@ -46,3 +46,12 @@
 	font-style: normal;
 	font-weight: normal;
 }
+/*@font-face {
+	font-family: "ZapfDingbatsITC";
+	src: url("../fonts/ZapfDingbatsITC/ZapfDingbatsITC.eot");
+	src: url("../fonts/ZapfDingbatsITC/ZapfDingbatsITC.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ZapfDingbatsITC/ZapfDingbatsITC.woff") format("woff"),
+	url("../fonts/ZapfDingbatsITC/ZapfDingbatsITC.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}*/
