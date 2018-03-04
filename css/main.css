@@ -29,6 +29,7 @@ html {
 body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
+	color: #706f6f;
 	min-height: 100%;
 	min-width: 320px;
 	position: relative;
@@ -63,6 +64,9 @@ h3 {
 h4 {
 	//font-size: 21px;
 	//line-height: 21px;
+}
+strong {
+	font-family: "RobotoBold";
 }
 .hidden {
 	display: none;
@@ -111,7 +115,7 @@ blockquote {
 .about-page h3,
 .about-programs h3 {
 	font-family: "RobotoBold";
-	font-size: 24px;
+	font-size: 26px;
 	text-transform: uppercase;
 	margin-bottom: 14px;
 }
@@ -127,13 +131,53 @@ p {
 }
 .about-programs {
 	background: #e1f4fc;
-	padding: 36px 0;
+	padding-top: 36px;
+	padding-bottom: 25px;
+	margin-top: 50px;
 }
 .about-programs h3 {
 	text-align: center;
 }
 .about-programs p {
 	text-align: center;
+	padding: 0 63px;
+}
+.about-neurology {
+	background: #f1f2f2;
+}
+.about-booking {
+	background: #444250;
+	padding-top: 44px;
+	padding-bottom: 40px;
+}
+.booking-form h3 {
+	font-family: "RobotoLight";
+	font-size: 34px;
+	color: #71bf44;
+	margin-bottom: 20px;
+}
+.booking-form p {
+	color: #f2f6d5;
+	margin-bottom: 3px;
+}
+.booking-form ul {
+	list-style: none;
+	padding-left: 25px;
+}
+.booking-form ul li {
+	color: #f2f6d5;
+	font-size: 24px;
+	padding-top: 5px;
+}
+.form-book {
+	width: 323px;
+	height: 50px;
+	color: #000;
+	padding-left: 10px;
+	text-transform: uppercase;
+	outline: none;
+	margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* PLACEHOLDER STYLE =====================
@@ -314,49 +358,11 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 /* Section possible  ==============
 ==================================*/
 
-.possible-item {
-	max-width: 320px;
-	margin: 0 auto;
-	position: relative;
-}
-.possible-item__top {
-	position: relative;
-	padding-bottom: 200px;
-}
-.possible-item__top.m-top100 {
-	margin-top: 100px;
-}
-.possible-item__top.p-top100 {
-	padding-bottom: 300px;
-}
-.arrow-bottom {
-    display: block;
-    width: 1px;
-    min-height: 95%;
-    height: 95%;
-    background: #a8a9ad;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -1px;
-}
-.arrow-bottom::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -8px;
-    bottom: -5px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 20px solid #a8a9ad;
-}
 .possible-top {
 	min-height: 1000px;
 	background-image: url(../img/possible-bg.png);
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 }
 .possible-circle {
 	width: 320px;
@@ -422,19 +428,6 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 }
 .possible-circle.blue .circle-item h4 {
 	color: #1496d2;
-}
-.possible {
-	padding: 48px 0 0;
-}
-.possible h2 {
-	font-size: 26px;
-	letter-spacing: 4px;
-	color: #706f6f;
-	text-align: center;
-	margin-bottom: 55px;
-}
-.possible-item__bottom {
-	background: #f1f1f1;
 }
 
 /* Slider skins ==============
