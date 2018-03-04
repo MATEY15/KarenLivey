@@ -177,7 +177,7 @@ p {
 	text-transform: uppercase;
 	outline: none;
 	margin-right: 10px;
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 /* PLACEHOLDER STYLE =====================
@@ -358,11 +358,49 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 /* Section possible  ==============
 ==================================*/
 
+.possible-item {
+	max-width: 320px;
+	margin: 0 auto;
+	position: relative;
+}
+.possible-item__top {
+	position: relative;
+	padding-bottom: 200px;
+}
+.possible-item__top.m-top100 {
+	margin-top: 100px;
+}
+.possible-item__top.p-top100 {
+	padding-bottom: 300px;
+}
+.arrow-bottom {
+	display: block;
+	width: 1px;
+	min-height: 95%;
+	height: 95%;
+	background: #a8a9ad;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+}
+.arrow-bottom::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	bottom: -5px;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 20px solid #a8a9ad;
+}
 .possible-top {
 	min-height: 1000px;
 	background-image: url(../img/possible-bg.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top center;
 }
 .possible-circle {
 	width: 320px;
@@ -429,6 +467,20 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .possible-circle.blue .circle-item h4 {
 	color: #1496d2;
 }
+.possible {
+	padding: 48px 0 0;
+}
+.possible h2 {
+	font-size: 26px;
+	letter-spacing: 4px;
+	color: #706f6f;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.possible-item__bottom {
+	background: #f1f1f1;
+}
+
 
 /* Slider skins ==============
 ==================================*/
