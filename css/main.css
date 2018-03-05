@@ -259,6 +259,89 @@ button {
 	outline: none;
 }
 
+/* BLOG =====================
+==============================================*/
+
+.wrapper {
+	padding-top: 24px;
+}
+.nav-top {
+	padding-bottom: 67px;
+}
+.nav-top ul {
+	list-style: none;
+}
+.nav-top ul li {
+	display: inline-block;
+}
+.nav-top ul li a {
+	position: relative;
+	display: inline-block;
+	padding: 0 16px;
+	font: 28px/normal "RobotoRegular",sans-serif;
+	color: #404040;
+	text-transform: uppercase;
+}
+.nav-top ul li a::before {
+	content: '';
+	display: block;
+  width: 2px;
+  height: 20px;
+  background: #404040;
+  position: absolute;
+  right: -4px;
+  top: 9px;
+}
+.nav-top ul li:last-child a::before {
+	content: none
+}
+.wrapper-post {
+	padding-bottom: 45px;
+}
+.item-post {
+	margin-bottom: 102px;
+}
+.item-post:last-child {
+	margin-bottom: 55px;
+}
+.post-right p {
+	font: 24px "RobotoLight",sans-serif;
+	padding-top: 15px;
+	line-height: 30px;
+}
+.post-right h3 a {
+	font: 37px "RobotoLight",sans-serif;
+ 	line-height: 45px;
+ 	color: #706f6f;
+}
+a.link-post {
+	font-size: 24px;
+	color: #706f6f;
+    display: inline-block;
+    text-decoration: none !important;
+    border-bottom: 1px solid #706f6f;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.post-img {
+	display: inline-block;
+  height: 430px;
+	width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.post-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
 /* PLACEHOLDER STYLE =====================
 ==============================================*/
 
