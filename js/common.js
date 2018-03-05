@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
 	/* Main Menu */
 
 	$('.mobile-menu__open').click(function(){

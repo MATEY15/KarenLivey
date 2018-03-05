@@ -65,7 +65,8 @@ h4 {
 	//font-size: 21px;
 	//line-height: 21px;
 }
-strong {
+strong,
+b {
 	font-family: "RobotoBold";
 }
 .hidden {
@@ -90,6 +91,15 @@ ul {
 p {
 	margin: 0;
 	padding: 0;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 14px;
+	position: relative;
+}
+p::before {
+	content: "";
+	display: block;
+	min-height: 1px;
 }
 blockquote {
 	margin: 0;
@@ -112,16 +122,14 @@ blockquote {
 .about-page {
 	margin-top: 22px;
 }
+.about-page p {
+	font-family: "RobotoLight", sans-serif;
+}
 .about-page h3,
 .about-programs h3 {
 	font-family: "RobotoBold";
 	font-size: 26px;
 	text-transform: uppercase;
-	margin-bottom: 14px;
-}
-p {
-	font-size: 24px;
-	line-height: 30px;
 	margin-bottom: 14px;
 }
 .about-page img {
@@ -139,6 +147,7 @@ p {
 	text-align: center;
 }
 .about-programs p {
+	font-family: "RobotoLight", sans-serif;
 	text-align: center;
 	padding: 0 63px;
 }
@@ -148,11 +157,11 @@ p {
 .about-booking {
 	background: #444250;
 	padding-top: 44px;
-	padding-bottom: 40px;
+	padding-bottom: 35px;
 }
 .booking-form h3 {
 	font-family: "RobotoLight";
-	font-size: 34px;
+	font-size: 38px;
 	color: #71bf44;
 	margin-bottom: 20px;
 }
@@ -170,23 +179,99 @@ p {
 	padding-top: 5px;
 }
 .form-book {
-	width: 323px;
-	height: 50px;
-	color: #000;
-	padding-left: 10px;
-	text-transform: uppercase;
+	padding-top: 10px;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+.form-item50,
+.form-item100 {
+	float: left;
+	padding: 0 7px;
+	margin-bottom: 14px;	
+} 
+.form-item50 {
+	width: 50%;
+}
+.form-item100 {
+	width: 100%;
+}
+.form-book input,
+.form-book textarea {
+	padding: 14px 15px 14px 15px;
+	width: 100%;
 	outline: none;
-	margin-right: 10px;
-	margin-bottom: 10px;
+}
+.form-book textarea {
+	min-height: 143px;
+}
+.nav-ul {
+	list-style: none;
+	text-align: right;
+}
+.nav-ul li {
+	display: inline-block;
+}
+.nav-link {
+	font-family: "RobotoRegular";
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none !important;
+	padding: 0 12px;
+	position: relative;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+.nav-link:hover {
+	//color: #f2f6d5;
+	color: #71bf44;
+}
+.nav-link::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 16px;
+	background: #fff;
+	position: absolute;
+	right: -3px;
+	top: 3px;
+}
+.nav-ul li:last-child a {
+	padding-right: 0;
+}
+.nav-ul li:first-child a {
+	padding-left: 0;
+}
+.nav-ul li:last-child a::before {
+	display: none;
+}
+.copyright {
+	padding: 20px 0;
+}
+.copyright p {
+	font-size: 16px;
+	text-align: center;
+}
+input,
+textarea,
+button {
+	outline: none;
 }
 
 /* PLACEHOLDER STYLE =====================
 ==============================================*/
 
-.placeholder-style::-webkit-input-placeholder {color: #d08026;}
-.placeholder-style::-moz-placeholder          {color: #d08026;}/* Firefox 19+ */
-.placeholder-style:-moz-placeholder           {color: #d08026;}/* Firefox 18- */
-.placeholder-style:-ms-input-placeholder      {color: #d08026;}
+.placeholder-style::-webkit-input-placeholder {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}
+.placeholder-style::-moz-placeholder          {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}/* Firefox 19+ */
+.placeholder-style:-moz-placeholder           {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}/* Firefox 18- */
+.placeholder-style:-ms-input-placeholder      {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}
+
+.placeholder-sign-form::-webkit-input-placeholder {font: 16px/normal "RobotoLight", sans-serif; color: #cccccc;}
+.placeholder-sign-form::-moz-placeholder          {font: 16px/normal "RobotoLight", sans-serif; color: #cccccc;}/* Firefox 19+ */
+.placeholder-sign-form:-moz-placeholder           {font: 16px/normal "RobotoLight", sans-serif; color: #cccccc;}/* Firefox 18- */
+.placeholder-sign-form:-ms-input-placeholder      {font: 16px/normal "RobotoLight", sans-serif; color: #cccccc;}
 
 /* HIDDEN PLACEHOLDER =====================
 ==============================================*/
@@ -542,19 +627,53 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .button-style {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 22px;
-	letter-spacing: 4px;
 	text-transform: uppercase;
 	text-decoration: none !important;
 	display: block;
+	padding: 3px 30px 4px;
+	border: none;
+}
+.sentence-button {
 	max-width: 230px;
+	letter-spacing: 4px;
+	font-size: 20px;
+	text-align: center;
+	color: #706f6f;
+	background: transparent;
+	padding: 4px 10px;
+	border: 1px solid #706f6f;
+}
+.sentence-button span {
+	position: relative;
+	top: -2px;
+}
+.sign-form__button {
+	font-size: 16px;
+	max-width: 230px;
+	letter-spacing: 4px;
+	margin-top: 10px;
+	float: right;
+	padding: 8px 30px 7px;
+	color: #706f6f;
+	background: transparent;
+	border: 1px solid #706f6f;
+}
+.info-more {
+	max-width: 230px;
+	letter-spacing: 4px;
+	color: #706f6f;
+	background: transparent;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	margin-left: -115px;
-	color: #706f6f;
-	background: transparent;
 	border: 1px solid #706f6f;
-	padding: 3px 30px 4px;
+}
+.send-footer {
+	font-size: 16px;
+	color: #fff;
+	background: #faaf18;
+	padding: 14px 26px 14px;
 }
 
 /* About Wrapper ==============
@@ -563,12 +682,123 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .about-wrapper {
 	background-image: url(../img/bg-about.jpg);
 	background-repeat: no-repeat;
-	background-position: center 0;
+	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
+	padding: 55px 0 0px;
+}
+.about-wrapper__logo {
+	margin-bottom: 20px;
+	display: inline-block;
+	text-decoration: none !important;
+	border-bottom: none !important;
+}
+.about-wrapper a {
+	line-height: 24px;
+	color: #f48220;
+	display: inline-block;
+	text-decoration: none !important;
+	border-bottom: 1px solid #f48220;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+.about-wrapper p {
+	font-size: 25px;
+	line-height: 34px;
+}
+.about-wrapper a:hover {
+	border-bottom: transparent !important;
 }
 
-/* Video ==============
+/* What-Clients ==============
+==================================*/
+
+.what-clients__content {
+	max-width: 1004px;
+	margin: 0 auto;
+}
+.what-clients {
+	padding: 24px 0 42px;
+}
+.what-clients h3 {
+	font: 38px/normal "RobotoBold", sans-serif;
+	text-align: center;
+	margin-bottom: 36px;
+}
+.what-clients p {
+	line-height: 26px;
+	text-align: center;
+}
+.signature {
+	font-family: "RobotoBold", sans-serif;
+}
+.signature span {
+	font-family: "RobotoRegular", sans-serif;
+}
+
+/* Bg-Job ==============
+==================================*/
+
+.bg-job {
+	height: 580px;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	-webkit-background-size: cover !important;
+	background-size: cover !important;
+}
+.sign_up__form a {
+	line-height: 24px;
+	color: #706f6f;
+	display: inline-block;
+	text-decoration: none !important;
+	border-bottom: 1px solid #706f6f;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+.sign_up__form a:hover {
+	border-bottom: transparent !important;
+}
+.sign_up {
+	padding: 64px 0 40px;
+}
+.sign_up__heading {
+	background: #609fc3;
+	margin-bottom: 25px;
+}
+.sign_up__heading h2 {
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+}
+
+.sign-form {
+	margin-top: 35px;
+}
+.sign-form input {
+	width: 100%;
+	border: 0px;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #b6b7bb;
+}
+.sentence {
+	background: #e1f4fc;
+}
+.sentence-wrapper {
+	padding: 50px 0 80px;
+	background-image: url(../img/globe.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.sentence h3 {
+	font-family: "RobotoLight", sans-serif;
+	font-size: 37px;
+	margin-bottom: 20px;
+}
+
+/*  ==============
 ==================================*/
 
 /* Footer ==============
