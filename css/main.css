@@ -311,6 +311,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	height: 550px;
 	min-height: auto;
 	max-height: 550px;
+	background-position: center center;
 }
 .link-logo {
 	display: inline-block;
@@ -579,7 +580,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	position: relative;
 }
 .possible-item__content {
-	max-width: 320px;
+	max-width: 290px;
 	margin: 0 auto;
 }
 .possible-heading {
@@ -825,6 +826,12 @@ ul.header-nav__list.mobile-menu__list {
 .header-nav__item:hover .header-nav__link {
 	color: #29abe2;
 }
+.black .header-nav__link {
+	color: #706f6f;
+}
+.black .header-nav__link::before {
+	background: #706f6f;
+}
 .header-nav__link {
 	font: inherit;
 	font-size: 18px;
@@ -846,7 +853,7 @@ ul.header-nav__list.mobile-menu__list {
 	background: #fff;
 	position: absolute;
 	right: -3px;
-	top: 3px;
+	top: 4px;
 }
 .header-nav__item:last-child .header-nav__link::before {
 	display: none;
