@@ -154,6 +154,7 @@
 }
 
 /* Large Devices, Wide Screens */
+/*
 @media only screen and (min-width : 1920px) {
 	.header {
 		max-height: 1600px;
@@ -184,4 +185,4 @@
 		border-right: 0px solid transparent;
 		border-bottom: 155px solid white;
 	}
-}
+}*/

@@ -40,6 +40,23 @@ body {
 	opacity: 1;
 }
 
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+.alignright {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
 
 /* CUSTOM STYLE =====================
 ==============================================*/
@@ -50,20 +67,22 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 h1 {
-	//font-size: 48px;
-	//line-height: 48px;
+    font-size: 42px;
 }
 h2 {
-	//font-size: 30px;
-	//line-height: 30px;
+    font-size: 36px;
 }
 h3 {
-	//font-size: 25px;
-	//line-height: 25px;
+	font-size: 26px;
 }
 h4 {
-	//font-size: 21px;
-	//line-height: 21px;
+	font-size: 24px;
+}
+h5 {
+	font-size: 22px;
+}
+h6 {
+	font-size: 20px;
 }
 strong,
 b {
@@ -280,8 +299,15 @@ button {
 	display: inline-block;
 	padding: 0 16px;
 	font: 28px/normal "RobotoRegular",sans-serif;
+	text-decoration: none !important;
 	color: #404040;
 	text-transform: uppercase;
+}
+.nav-top ul li:first-child a {
+	padding-left: 0;
+}
+.nav-top ul li:last-child a {
+	padding-right: 0;
 }
 .nav-top ul li a::before {
 	content: '';
@@ -303,7 +329,7 @@ button {
 	margin-bottom: 102px;
 }
 .item-post:last-child {
-	margin-bottom: 55px;
+	margin-bottom: 0px;
 }
 .post-right p {
 	font: 24px "RobotoLight",sans-serif;
@@ -315,7 +341,8 @@ button {
 	line-height: 45px;
 	color: #706f6f;
 }
-a.link-post {
+a.link-post,
+.about-karen a {
 	font-size: 24px;
 	color: #706f6f;
 	display: inline-block;
@@ -324,6 +351,9 @@ a.link-post {
 	-webkit-transition: all .25s ease-in-out;
 	-o-transition: all .25s ease-in-out;
 	transition: all .25s ease-in-out;
+}
+.about-karen a {
+	line-height: 22px;
 }
 .post-img {
 	display: inline-block;
@@ -336,11 +366,65 @@ a.link-post {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	height: auto;
-	width: 100%;
+	height: 100%;
+	width: auto;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
+}
+
+/* POST =====================
+==============================================*/
+
+.blog-post {
+	padding-bottom: 30px;
+}
+.blog-post img {
+	margin-bottom: 22px;
+}
+.blog-post p,
+.about-karen p {
+	font-family: "RobotoLight", sans-serif;
+	line-height: 42px;
+	font-size: 26px;
+}
+.blog-post h3 {
+	//font-family: "RobotoBold", sans-serif;
+	font-size: 26px;
+	margin-bottom: 2px;
+}
+.about-karen {
+	background: #e1f4fc;
+	padding-top: 43px;
+	padding-bottom: 34px;
+}
+.about-karen h3 {
+	font-family: "RobotoLight", sans-serif;
+	line-height: 56px;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.about-karen p {
+	line-height: 36px;
+	margin-bottom: 35px;
+}
+.about-karen a {
+	font-family: "RobotoLight", sans-serif;
+}
+.post-nav ul {
+	list-style: none;
+}
+.post-nav ul li {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #706f6f;
+}
+.post-nav ul li a {
+	font-family: "RobotoLight", sans-serif;
+	font-size: 26px;
+	color: #706f6f;
+	text-decoration: none !important;
+	line-height: 27px;
 }
 
 /* PLACEHOLDER STYLE =====================
@@ -745,6 +829,14 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	color: #706f6f;
 	background: transparent;
 	border: 1px solid #706f6f;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+.sign-form__button:hover {
+background: #c5d8e7;
+border: 1px solid #c5d8e7;
+color: #fff;
 }
 .info-more {
 	max-width: 230px;
