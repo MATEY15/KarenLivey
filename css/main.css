@@ -285,12 +285,12 @@ button {
 .nav-top ul li a::before {
 	content: '';
 	display: block;
-  width: 2px;
-  height: 20px;
-  background: #404040;
-  position: absolute;
-  right: -4px;
-  top: 9px;
+	width: 2px;
+	height: 20px;
+	background: #404040;
+	position: absolute;
+	right: -4px;
+	top: 9px;
 }
 .nav-top ul li:last-child a::before {
 	content: none
@@ -311,35 +311,35 @@ button {
 }
 .post-right h3 a {
 	font: 37px "RobotoLight",sans-serif;
- 	line-height: 45px;
- 	color: #706f6f;
+	line-height: 45px;
+	color: #706f6f;
 }
 a.link-post {
 	font-size: 24px;
 	color: #706f6f;
-    display: inline-block;
-    text-decoration: none !important;
-    border-bottom: 1px solid #706f6f;
-    -webkit-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
+	display: inline-block;
+	text-decoration: none !important;
+	border-bottom: 1px solid #706f6f;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
 }
 .post-img {
 	display: inline-block;
-  height: 430px;
+	height: 430px;
 	width: 100%;
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 .post-img img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 /* PLACEHOLDER STYLE =====================
@@ -593,10 +593,10 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 }
 .possible-item.yellow .possible-circle {
 	background: rgb(251,228,0); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(251,228,0,1) 1%, rgba(248,204,0,1) 38%, rgba(221,152,0,1) 62%, rgba(186,120,0,1) 84%, rgba(151,94,0,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(251,228,0,1) 1%,rgba(248,204,0,1) 38%,rgba(221,152,0,1) 62%,rgba(186,120,0,1) 84%,rgba(151,94,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(251,228,0,1) 1%,rgba(248,204,0,1) 38%,rgba(221,152,0,1) 62%,rgba(186,120,0,1) 84%,rgba(151,94,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe400', endColorstr='#975e00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(-45deg, rgba(251,228,0,1) 1%, rgba(248,204,0,1) 38%, rgba(221,152,0,1) 62%, rgba(186,120,0,1) 84%, rgba(151,94,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(251,228,0,1) 1%,rgba(248,204,0,1) 38%,rgba(221,152,0,1) 62%,rgba(186,120,0,1) 84%,rgba(151,94,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(251,228,0,1) 1%,rgba(248,204,0,1) 38%,rgba(221,152,0,1) 62%,rgba(186,120,0,1) 84%,rgba(151,94,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe400', endColorstr='#975e00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .possible-item.green .possible-circle {
 	background: rgb(0,230,227); /* Old browsers */
@@ -684,19 +684,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe400', end
 	margin: auto;
 }
 .possible-item__bottom p,
-.possible-item__bottom ul li {
+.possible-item__bottom ul li,
+.programm-text ul li {
 	font-size: 26px;
 	font-family: "RobotoLight", sans-serif;
 }
-.possible-item__bottom ul {
+.possible-item__bottom ul,
+.programm-text ul {
 	list-style: none;
 }
+.programm-text ul li,
 .possible-item__bottom ul li {
 	margin-bottom: 8px;
 	padding-left: 30px;
 	position: relative;
 }
-.possible-item__bottom ul li::before {
+.possible-item__bottom ul li::before,
+.programm-text ul li::before {
 	content: "4";
 	font-family: "ZapfDingbatsITC";
 	display: block;
@@ -881,8 +885,79 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe400', end
 	margin-bottom: 20px;
 }
 
-/*  ==============
+/* Block Proframm ==============
 ==================================*/
+
+.programms-page {
+	background-image: url(../img/possible-bg2.png);
+	background-repeat: no-repeat;
+	background-position: left 310px;
+	padding: 20px 0 45px;
+}
+.proframm-icon {
+	width: 380px;
+	float: left;
+}
+.programm-text h1 {
+	font-size: 42px;
+	line-height: 35px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin: auto;
+}
+.page-yellow .programm-text h1,
+.page-green .programm-text h1,
+.page-blue .programm-text h1 {
+	margin-bottom: 30px;
+}
+.page-yellow .programm-text h1{
+	color: #f2a91d;
+}
+.page-green .programm-text h1 {
+	color: #2db7cc;
+}
+.page-blue .programm-text h1 {
+	color: #1496d2;
+}
+.programm-text p {
+	font-family: "RobotoLight", sans-serif;
+	font-size: 26px;
+	line-height: 40px;
+}
+.programm-text ul li {
+	margin-bottom: 18px;
+}
+.programm-text .sentence-button {
+	margin-top: 90px;
+}
+.programms-wrap .possible-circle {
+	margin-bottom: 45px;
+}
+.programms-wrap.yellow h4 {
+	color: #f2a91d;
+}
+.programms-wrap.green h4 {
+	color: #2db7cc;
+}
+.programms-wrap.blue h4 {
+	color: #1496d2;
+}
+.programms-small h4 {
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 4px;
+	margin: auto;
+}
+.programms-small .sentence-button {
+	margin: 25px auto 0;
+	 letter-spacing: 0px;
+}
+
+/**/
+
+
 
 /* Footer ==============
 ==================================*/
