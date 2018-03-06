@@ -3,6 +3,10 @@
 /* Large Devices, Wide Screens */
 
 
+@media only screen and (max-width : 2560px) {
+
+}
+
 @media only screen and (max-width : 1545px) {
 
 }
@@ -150,6 +154,34 @@
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media only screen and (min-width : 1920px) {
+	.header {
+		max-height: 1600px;
+	}
+	.wrapper__header-line {
+		width: 2560px;
+		height: 100%;
+		position: absolute;
+		left: 50%;
+		margin-left: -1280px;
+	}
+	.header-line__top-left {
+		position: absolute;
+		bottom: 0px;
+		width: 0;
+		height: 0;
+		border-left: 0px solid transparent;
+		border-right: 740px solid transparent;
+		border-bottom: 155px solid white;
+	}
+	.header-line__top-right {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-left: 1820px solid transparent;
+		border-right: 0px solid transparent;
+		border-bottom: 155px solid white;
+	}
 }
