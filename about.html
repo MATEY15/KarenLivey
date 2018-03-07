@@ -41,13 +41,13 @@
 	<header class="header default-header" style="background-image: url(img/about-bg.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<a href="#" class="link-logo">
-						<img src="img/logo-white.png" alt="Logo">
+						<img src="img/logo-white.png" alt="Logo" width="415px">
 					</a>
 				</div>
-				<div class="col-md-8">
-					<a href="#" class="burger-nav__list   mobile-menu__open" id="click-prevent">
+				<div class="col-md-8 col-sm-8">
+					<a href="#" class="burger-nav__list mobile-menu__open" id="click-prevent">
 						<span class="stick"></span>
 						<span class="stick"></span>
 						<span class="stick"></span>
@@ -211,8 +211,8 @@
 		<section class="possible clearfix">
 			<div class="container possible-top">
 				<h2>WHAT IS POSSIBLE FOR YOU...</h2>
-				<div class=" clearfix">
-					<div class="col-md-4">
+				<div class="row clearfix">
+					<div class="col-md-4 posibl-items">
 						<div class="possible-item yellow">
 							<div class="possible-item__top m-top100">
 								<span class="arrow-bottom"></span>
@@ -224,7 +224,7 @@
 								</div>
 							</div>
 							<div class="possible-item__bottom">
-								<div class="possible-item__content js-height">
+								<div class="possible-item__content yourelements">
 									<div class="possible-heading">
 										<h4>
 											BRAIN SWITCH
@@ -242,7 +242,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 posibl-items">
 						<div class="possible-item green">
 							<div class="possible-item__top p-top100">
 								<span class="arrow-bottom"></span>
@@ -254,7 +254,7 @@
 								</div>
 							</div>
 							<div class="possible-item__bottom">
-								<div class="possible-item__content js-height">
+								<div class="possible-item__content yourelements">
 									<div class="possible-heading">
 										<h4>
 											BRAINSASSY
@@ -276,7 +276,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 posibl-items">
 						<div class="possible-item blue">
 							<div class="possible-item__top m-top100">
 								<span class="arrow-bottom"></span>
@@ -288,7 +288,7 @@
 								</div>
 							</div>
 							<div class="possible-item__bottom">
-								<div class="possible-item__content js-height">
+								<div class="possible-item__content yourelements">
 									<div class="possible-heading">
 										<h4>
 											BRAIN SAVVY
@@ -406,21 +406,8 @@
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
-	<!-- <script src="libs/chart/chart.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.select.js"></script> -->
-	<!-- <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
-	<script src="libs/auto-height/equal-heights.js"></script>
+	<script src="libs/equalheights/jquery.equalheights.min.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-		$(window).resize(function() { 
-			columnConform('.js-height');
-		});
-		$(function() { 
-			columnConform('.js-height'); 
-		});
-	</script>
 
 </body>
 </html>

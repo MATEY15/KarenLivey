@@ -41,13 +41,13 @@
 	<header class="header default-header" style="background-image: url(img/about-bg.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<a href="#" class="link-logo">
-						<img src="img/logo-white.png" alt="Logo">
+						<img src="img/logo-white.png" alt="Logo" width="415px">
 					</a>
 				</div>
-				<div class="col-md-8">
-					<a href="#" class="burger-nav__list   mobile-menu__open" id="click-prevent">
+				<div class="col-md-8 col-sm-8">
+					<a href="#" class="burger-nav__list mobile-menu__open" id="click-prevent">
 						<span class="stick"></span>
 						<span class="stick"></span>
 						<span class="stick"></span>
@@ -109,7 +109,22 @@
 				</nav>
 				<section class="blog-post clearfix">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-4 col-sm-12 col-md-push-8 col-sm-push-0">
+							<nav class="post-nav">
+								<ul>
+									<li>
+										<a href="">Understanding willpower and when to use it...</a>
+									</li>
+									<li>
+										<a href="">What is the average of FIVE?</a>
+									</li>
+									<li>
+										<a href="">Not WHAT but WHO you have...</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-8 col-sm-12 col-md-pull-4 col-sm-pull-0">
 							<img src="img/post-img1.png" alt="Alt">
 							<p>
 								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
@@ -130,21 +145,6 @@
 								Ed ut perspiciatis unde omnis iste natus error sit voluptatem
 								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
 							</p>
-						</div>
-						<div class="col-md-4">
-							<nav class="post-nav">
-								<ul>
-									<li>
-										<a href="">Understanding willpower and when to use it...</a>
-									</li>
-									<li>
-										<a href="">What is the average of FIVE?</a>
-									</li>
-									<li>
-										<a href="">Not WHAT but WHO you have...</a>
-									</li>
-								</ul>
-							</nav>
 						</div>
 					</div>
 				</section>
@@ -284,21 +284,8 @@
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
-	<!-- <script src="libs/chart/chart.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.select.js"></script> -->
-	<!-- <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
-	<script src="libs/auto-height/equal-heights.js"></script>
+	<script src="libs/equalheights/jquery.equalheights.min.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-		$(window).resize(function() { 
-			columnConform('.js-height');
-		});
-		$(function() { 
-			columnConform('.js-height'); 
-		});
-	</script>
 
 </body>
 </html>

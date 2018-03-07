@@ -41,13 +41,13 @@
 	<header class="header default-header" style="background-image: url(img/bg-programm3.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<a href="#" class="link-logo">
-						<img src="img/logo-white.png" alt="Logo">
+						<img src="img/logo-white.png" alt="Logo" width="415px">
 					</a>
 				</div>
-				<div class="col-md-8">
-					<a href="#" class="burger-nav__list   mobile-menu__open" id="click-prevent">
+				<div class="col-md-8 col-sm-8">
+					<a href="#" class="burger-nav__list mobile-menu__open" id="click-prevent">
 						<span class="stick"></span>
 						<span class="stick"></span>
 						<span class="stick"></span>
@@ -102,7 +102,9 @@
 		<div class="contact-info">
 			<div class="container clearfix">
 				<div class="contact-item">
-					<img src="img/contact-img.png" class="contact-images" alt="">
+					<div class="contact-item-img">
+						<img src="img/contact-img.png" class="contact-images" alt="">
+					</div>
 				</div>
 				<div class="contact-item">
 					<h1>GET IN TOUCH</h1>
@@ -258,21 +260,8 @@
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
-	<!-- <script src="libs/chart/chart.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.select.js"></script> -->
-	<!-- <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
-	<script src="libs/auto-height/equal-heights.js"></script>
+	<script src="libs/equalheights/jquery.equalheights.min.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-		$(window).resize(function() { 
-			columnConform('.js-height');
-		});
-		$(function() { 
-			columnConform('.js-height'); 
-		});
-	</script>
 
 </body>
 </html>

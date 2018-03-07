@@ -40,13 +40,13 @@
 	<header class="header" style="background-image: url(img/header-img1.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<a href="#" class="link-logo">
 						<img src="img/logo.png" alt="Logo" width="415px">
 					</a>
 				</div>
-				<div class="col-md-8">
-					<a href="#" class="burger-nav__list   mobile-menu__open" id="click-prevent">
+				<div class="col-md-8 col-sm-8">
+					<a href="#" class="burger-nav__list mobile-menu__open" id="click-prevent">
 						<span class="stick"></span>
 						<span class="stick"></span>
 						<span class="stick"></span>
@@ -123,8 +123,8 @@
 		<section class="possible clearfix">
 			<div class="container possible-top">
 				<h2>WHAT IS POSSIBLE FOR YOU...</h2>
-				<div class=" clearfix">
-					<div class="col-md-4">
+				<div class="row clearfix">
+					<div class="col-md-4 posibl-items">
 						<div class="possible-item yellow">
 							<div class="possible-item__top m-top100">
 								<span class="arrow-bottom"></span>
@@ -136,7 +136,7 @@
 								</div>
 							</div>
 							<div class="possible-item__bottom">
-								<div class="possible-item__content js-height">
+								<div class="possible-item__content yourelements js-height">
 									<div class="possible-heading">
 										<h4>
 											BRAIN SWITCH
@@ -173,7 +173,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 posibl-items">
 						<div class="possible-item green">
 							<div class="possible-item__top p-top100">
 								<span class="arrow-bottom"></span>
@@ -185,7 +185,7 @@
 								</div>
 							</div>
 							<div class="possible-item__bottom">
-								<div class="possible-item__content js-height">
+								<div class="possible-item__content yourelements js-height">
 									<div class="possible-heading">
 										<h4>
 											BRAINSASSY
@@ -233,7 +233,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 posibl-items">
 						<div class="possible-item blue">
 							<div class="possible-item__top m-top100">
 								<span class="arrow-bottom"></span>
@@ -245,7 +245,7 @@
 								</div>
 							</div>
 							<div class="possible-item__bottom">
-								<div class="possible-item__content js-height">
+								<div class="possible-item__content yourelements js-height">
 									<div class="possible-heading">
 										<h4>
 											BRAIN SAVVY
@@ -298,26 +298,28 @@
 		</section>
 		<article class="about-wrapper">
 			<div class="container">
-				<div class="col-md-6">
-					<a href="#" class="about-wrapper__logo">
-						<img src="img/logo-about.png" alt="">
-					</a>
-					<p>
-						I work with people who want to be great leaders,
-						people who want to be the best they can be. They
-						value professional development and can see how
-						it can improve their own time at work and also
-						those who work with them and for them.
-						My focus of rewiring leadership is showing
-						leaders how they can use a neuroscience lens
-						to give deeper understanding and knowledge
-						in behaviours. They can learn how some small
-						tweaks can make exponential positive difference
-						to themselves and others. <a href="#">Read more..</a>
-					</p>
-				</div>
-				<div class="col-md-6">
-					<img src="img/img-about.png" alt="" class="autor">
+				<div class="row">
+					<div class="col-md-6">
+						<a href="#" class="about-wrapper__logo">
+							<img src="img/logo-about.png" alt="">
+						</a>
+						<p>
+							I work with people who want to be great leaders,
+							people who want to be the best they can be. They
+							value professional development and can see how
+							it can improve their own time at work and also
+							those who work with them and for them.
+							My focus of rewiring leadership is showing
+							leaders how they can use a neuroscience lens
+							to give deeper understanding and knowledge
+							in behaviours. They can learn how some small
+							tweaks can make exponential positive difference
+							to themselves and others. <a href="#">Read more..</a>
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img src="img/img-about.png" alt="" class="autor">
+					</div>
 				</div>
 			</div>
 		</article>
@@ -464,21 +466,8 @@
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
-	<!-- <script src="libs/chart/chart.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.select.js"></script> -->
-	<!-- <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
-	<script src="libs/auto-height/equal-heights.js"></script>
+	<script src="libs/equalheights/jquery.equalheights.min.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-		$(window).resize(function() { 
-			columnConform('.js-height');
-		});
-		$(function() { 
-			columnConform('.js-height'); 
-		});
-	</script>
 
 </body>
 </html>

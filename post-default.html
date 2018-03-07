@@ -41,18 +41,18 @@
 	<header class="header default-header" style="background-image: url(img/about-bg.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-4">
 					<a href="#" class="link-logo">
-						<img src="img/logo-white.png" alt="Logo">
+						<img src="img/logo-white.png" alt="Logo" width="415px">
 					</a>
 				</div>
-				<div class="col-md-8">
-					<a href="#" class="burger-nav__list   mobile-menu__open" id="click-prevent">
+				<div class="col-md-8 col-sm-8">
+					<a href="#" class="burger-nav__list mobile-menu__open" id="click-prevent">
 						<span class="stick"></span>
 						<span class="stick"></span>
 						<span class="stick"></span>
 					</a>
-					<nav class="header-nav">
+					<nav class="header-nav black">
 						<ul class="header-nav__list mobile-menu__list">
 							<li class="header-nav__item menu-item-has-children">
 								<a href="#" class="header-nav__link">Home</a>
@@ -303,21 +303,8 @@
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<!-- <script src="libs/owl-carousel/owl.carousel.min.js"></script> -->
-	<!-- <script src="libs/chart/chart.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.js"></script> -->
-	<!-- <script src="libs/jcf/jcf.select.js"></script> -->
-	<!-- <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script> -->
-	<script src="libs/auto-height/equal-heights.js"></script>
+	<script src="libs/equalheights/jquery.equalheights.min.js"></script>
 	<script src="js/common.js"></script>
-	<script>
-		$(window).resize(function() { 
-			columnConform('.js-height');
-		});
-		$(function() { 
-			columnConform('.js-height'); 
-		});
-	</script>
 
 </body>
 </html>
