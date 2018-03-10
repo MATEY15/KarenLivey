@@ -27,7 +27,7 @@ html {
 	height: 100%;
 }
 body {
-	font-family: "RobotoRegular", sans-serif;
+	font-family: "RobotoLight", sans-serif;
 	font-size: 16px;
 	color: #706f6f;
 	min-height: 100%;
@@ -110,9 +110,9 @@ ul {
 p {
 	margin: 0;
 	padding: 0;
-	font-size: 24px;
-	line-height: 30px;
-	margin-bottom: 14px;
+	font-size: 22px;
+	line-height: 28px;
+	margin-bottom: 10px;
 	position: relative;
 }
 p::before {
@@ -193,8 +193,8 @@ blockquote {
 }
 .booking-form ul li {
 	color: #f2f6d5;
-	font-size: 24px;
-	padding-top: 5px;
+	font-size: 22px;
+	margin-bottom: 5px;
 }
 .form-book {
 	padding-top: 10px;
@@ -215,7 +215,7 @@ blockquote {
 }
 .form-book input,
 .form-book textarea {
-	padding: 14px 15px 14px 15px;
+	padding: 10px 10px 8px;
 	width: 100%;
 	outline: none;
 }
@@ -230,10 +230,10 @@ blockquote {
 	display: inline-block;
 }
 .nav-link {
-	font-family: "RobotoRegular";
+	font-family: "RobotoLight";
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	text-decoration: none !important;
 	padding: 0 12px;
@@ -298,7 +298,7 @@ button {
 	position: relative;
 	display: inline-block;
 	padding: 0 16px;
-	font: 28px/normal "RobotoRegular",sans-serif;
+	font: 28px/normal "RobotoLight",sans-serif;
 	text-decoration: none !important;
 	color: #404040;
 	text-transform: uppercase;
@@ -432,10 +432,10 @@ a.link-post,
 /* PLACEHOLDER STYLE =====================
 ==============================================*/
 
-.placeholder-style::-webkit-input-placeholder {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}
-.placeholder-style::-moz-placeholder          {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}/* Firefox 19+ */
-.placeholder-style:-moz-placeholder           {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}/* Firefox 18- */
-.placeholder-style:-ms-input-placeholder      {font: 18px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}
+.placeholder-style::-webkit-input-placeholder {font: 16px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}
+.placeholder-style::-moz-placeholder          {font: 16px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}/* Firefox 19+ */
+.placeholder-style:-moz-placeholder           {font: 16px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}/* Firefox 18- */
+.placeholder-style:-ms-input-placeholder      {font: 16px/normal "RobotoLight", sans-serif; color: #cacacd; text-transform: uppercase;}
 
 .placeholder-sign-form::-webkit-input-placeholder {font: 16px/normal "RobotoLight", sans-serif; color: #cccccc;}
 .placeholder-sign-form::-moz-placeholder          {font: 16px/normal "RobotoLight", sans-serif; color: #cccccc;}/* Firefox 19+ */
@@ -492,17 +492,17 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 
 .book-text {
 	text-align: center;
-	max-width: 460px;
+	max-width: 400px;
 	width: 100%;
 	float: right;
 	margin-top: 130px;
 }
 .book-text a {
-	font: 42px/46px "RobotoBold", sans-serif;
+	font: 34px/38px "RobotoBold", sans-serif;
 	text-decoration: none !important;
 	text-align: center;
 	color: #f2f6d5;
-	padding: 20px 15px 30px;
+	padding: 20px 15px 24px;
 	background: #6ba6a6;
 	display: inline-block;
 	width: 100%;
@@ -510,7 +510,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .book-text a span {
 	border-bottom: 2px solid #f2f6d5;
 	display: inline-block;
-	line-height: 40px;
+	line-height: 34px;
 }
 
 /* Line Bottom =====================
@@ -575,16 +575,16 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 ==================================*/
 
 .neuroscience {
-	padding: 32px 0 80px;
+	padding: 40px 0 40px;
 }
 .neuroscience h3 {
-	font-size: 34px;
+	font-size: 30px;
 	color: #ef7d00;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .neuroscience p {
-	font-size: 26px;
-	line-height: 30px;
+	font-size: 22px;
+	line-height: 26px;
 	color: #706f6f;
 }
 
@@ -594,10 +594,10 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .quote-home {
 	background: #646372;
 	color: #ffffff;
-	padding: 25px 0 40px;
+	padding: 40px 0 40px;
 }
 .quote-home .quote-text {
-	font: 28px/36px "Roboto-Italic", sans-serif;
+	font: 26px/32px "Roboto-Italic", sans-serif;
 	text-align: center;
 	width: 88%;
 	margin: 0 auto;
@@ -677,8 +677,8 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	border-top: 20px solid #a8a9ad;
 }
 .possible-circle {
-	width: 320px;
-	height: 320px;
+	width: 300px;
+	height: 300px;
 	margin: 0 auto;
 	position: relative;
 	-webkit-box-shadow: 15px 15px 40px 0px rgba(51, 51, 51, 0.2);
@@ -710,15 +710,15 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13c5ea', endColorstr='#064976',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .circle-item {
-	width: 250px;
-	height: 250px;
+	width: 230px;
+	height: 230px;
 	text-align: center;
 	background: #fff;
 	position: absolute;
 	top: 50%;
-	margin-top: -125px;
+	margin-top: -115px;
 	left: 50%;
-	margin-left: -125px;
+	margin-left: -115px;
 	padding: 20px 0 0;
 	-webkit-box-shadow: 15px 15px 40px 0px rgba(51, 51, 51, 0.2) inset;
 	-moz-box-shadow: 15px 15px 40px 0px rgba(51, 51, 51, 0.2) inset;
@@ -728,8 +728,8 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	border-radius: 50%;
 }
 .circle-item h4 {
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 22px;
+	line-height: 26px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -746,7 +746,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	color: #1496d2;
 }
 .possible h2 {
-	font-size: 26px;
+	font-size: 24px;
 	letter-spacing: 4px;
 	color: #706f6f;
 	text-align: center;
@@ -769,12 +769,12 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	min-height: 130px;
+	min-height: 100px;
 	margin-bottom: 10px;
 }
 .possible-item__bottom h4 {
-	font-size: 30px;
-	line-height: 35px;
+	font-size: 26px;
+	line-height: 30px;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 4px;
@@ -783,7 +783,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 .possible-item__bottom p,
 .possible-item__bottom ul li,
 .programm-text ul li {
-	font-size: 26px;
+	font-size: 22px;
 	font-family: "RobotoLight", sans-serif;
 }
 .possible-item__bottom ul,
@@ -792,7 +792,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 }
 .programm-text ul li,
 .possible-item__bottom ul li {
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 	padding-left: 30px;
 	position: relative;
 }
@@ -809,7 +809,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	top: 10px;
 }
 .button-style {
-	font-family: "RobotoRegular", sans-serif;
+	font-family: "RobotoLight", sans-serif;
 	font-size: 22px;
 	text-transform: uppercase;
 	text-decoration: none !important;
@@ -818,9 +818,9 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	border: none;
 }
 .sentence-button {
-	max-width: 230px;
+	max-width: 220px;
 	letter-spacing: 4px;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	color: #706f6f;
 	background: transparent;
@@ -886,7 +886,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	border-bottom: none !important;
 }
 .about-wrapper a {
-	line-height: 24px;
+	line-height: 20px;
 	color: #f48220;
 	display: inline-block;
 	text-decoration: none !important;
@@ -896,8 +896,8 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	transition: all .25s ease-in-out;
 }
 .about-wrapper p {
-	font-size: 25px;
-	line-height: 34px;
+	font-size: 22px;
+	line-height: 30px;
 }
 .about-wrapper a:hover {
 	border-bottom: transparent !important;
@@ -914,9 +914,9 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	padding: 24px 0 42px;
 }
 .what-clients h3 {
-	font: 38px/normal "RobotoBold", sans-serif;
+	font: 34px/normal "RobotoBold", sans-serif;
 	text-align: center;
-	margin-bottom: 36px;
+	margin-bottom: 26px;
 }
 .what-clients p {
 	line-height: 26px;
@@ -926,7 +926,7 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	font-family: "RobotoBold", sans-serif;
 }
 .signature span {
-	font-family: "RobotoRegular", sans-serif;
+	font-family: "RobotoLight", sans-serif;
 }
 
 /* Bg-Job ==============
@@ -960,9 +960,12 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	margin-bottom: 25px;
 }
 .sign_up__heading h2 {
-	font-size: 48px;
+	font-size: 42px;
 	text-align: center;
 	color: #fff;
+}
+.sign_up__form .col-md-5 img {
+	width: 100%;
 }
 
 .sign-form {
@@ -979,14 +982,14 @@ input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder      {opa
 	background: #e1f4fc;
 }
 .sentence-wrapper {
-	padding: 50px 0 80px;
+	padding: 60px 0 80px;
 	background-image: url(../img/globe.png);
 	background-repeat: no-repeat;
 	background-position: right top;
 }
 .sentence h3 {
 	font-family: "RobotoLight", sans-serif;
-	font-size: 37px;
+	font-size: 34px;
 	margin-bottom: 20px;
 }
 
@@ -1128,7 +1131,7 @@ ul.header-nav__list.mobile-menu__list {
 }
 .header-nav__link {
 	font: inherit;
-	font-size: 18px;
+	font-size: 15px;
 	color: #ffffff;
 	display: inline-block;
 	text-transform: uppercase;
@@ -1143,7 +1146,7 @@ ul.header-nav__list.mobile-menu__list {
 	content: "";
 	display: block;
 	width: 1px;
-	height: 16px;
+	height: 12px;
 	background: #fff;
 	position: absolute;
 	right: -3px;
