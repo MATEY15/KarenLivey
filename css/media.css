@@ -362,6 +362,10 @@
 }
 
 @media only screen and (max-width : 600px) {
+	.header {
+		max-height: 400px;
+		min-height: 100%;
+	}
 	.contact-item h1 {
 		font-size: 36px;
 		line-height: 34px;
